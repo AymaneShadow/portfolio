@@ -273,17 +273,18 @@
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
           <i class="fa fa-3x fa-times"></i>
         </a>
-        <div class="container text-center">
+        <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">3D Simulation of AUI Campus</h2>
-              <h2 class="text-secondary text-uppercase mb-0">-</h2>
-              <h2 class="text-secondary text-uppercase mb-0">Computer Graphics Class</h2>
+              <h2 class="text-secondary text-uppercase mb-0 text-center">3D Simulation of AUI Campus</h2>
+              <h2 class="text-secondary text-uppercase mb-0 text-center">-</h2>
+              <h2 class="text-secondary text-uppercase mb-0 text-center">Computer Graphics Class</h2>
               <hr class="star-dark mb-5">
               <img class="img-fluid mb-5" src="img/project1/Le Boolewan.png" alt="">
 			  
 
-			  <h3 class="text-secondary mb-2">Introduction</h3>
+			  <h3 class="text-secondary mb-4">Introduction</h3>
+
               <p class="mb-5">Simulating real world places is always really interesting because it allows experiencing their sight  from anywhere in the planet, and if done right it can help solve some interesting optimization  problems that otherwise would take a much longer time. My project is about implementing a 3D  model of a small part of AUI campus.</p>
 
               <p class="mb-5">After learning how to manually create a cube and a pyramid during the first part of the course, it  became obvious that making any kind of more complex shapes would be extremely hard, the  challenge would be more on finding out where each point of an objects geometry is rather than  learning new and more complex computer graphics generation techniques.</p>
@@ -295,7 +296,7 @@
 			  <img class="img-fluid mb-5" src="img/project1/Wotah.png" alt="">
 
 
-			  <h3 class="text-secondary mb-2">Used tools</h3>
+			  <h3 class="text-secondary mb-4">Used tools</h3>
 
 			  <ul>
 			  	<li>Eclipse to run the Java Engine that is used to render the modeled objects, as well as the  terrain, lights, water, the sky, etc.</li>
@@ -307,7 +308,7 @@
 			  <p class="mb-3">It is important to note that the Java Engine is made by ThinMatrix, a YouTuber that makes a tutorial  series on how to create a 3D Java game with OpenGL using the library LWJGL (Light Weight Java  Game Library).</p>
 			  <p class="mb-5">Link to his YouTube channel: <a href="https://www.youtube.com/user/ThinMatrix">https://www.youtube.com/user/ThinMatrix</p></a>
 
-			  <h3 class="text-secondary mb-2">In-depth Explanation of the tools usage</h3>
+			  <h3 class="text-secondary mb-4">In-depth Explanation of the tools usage</h3>
 
 			  <p class="mb-5">Now that I’ve found an object parser, I had to start making the 3D objects needed for my project.  This is when I downloaded Blender. This software is used to make really sophisticated video games, so it was no surprise that it was hard to use, and in my case I used it to make 3D models of objects and to use UV Mapping to put texture on them.</p>
 
@@ -337,7 +338,7 @@
 			  <p class="mb-5">Picture 6: Use of Eclipse to run the Game Engine.</p>
 
 			  <p class="mb-5">Building a single building was a big hassle, it is what took most of my time on this project, but after  every failed attempt I reinforced my knowledge about Blender and the end results turned-out to be  pretty decent.</p>			  			  			  
-			  <h3 class="text-secondary mb-2">How close did I come to achieving my graphical goals?</h3>
+			  <h3 class="text-secondary mb-4">How close did I come to achieving my graphical goals?</h3>
 
 			  <p class="mb-5">Very close. I made a textured 3D model of the cafeteria building, a textured 3D model of the fountain next to it that contains shiny, reflective and rippling water, I used a textured terrain and moving clouds that use the skybox method (3D projection of textures to a cube that rotates). What I didn’t make is animating my character, or implement physical properties.</p>
 
@@ -351,15 +352,15 @@
 			  <img class="img-fluid mb-0" src="img/project1/wotahz.png" alt="">
 			  <p class="mb-5">Picture 9: Realistic water rendering contained in the fountain model.</p>			  			  
 
-			  <h3 class="text-secondary mb-2">How would I implement the things I didn’t?</h3>
+			  <h3 class="text-secondary mb-4">How would I implement the things I didn’t?</h3>
 
-			  <h4 class="text-secondary mb-2">Animations</h4>
+			  <p class="text-secondary mb-2"><b>Animations</b></p>
 
 			  <p class="mb-5">Using blender I would create a “skeleton” inside my character’s “body”, it’ll be very simple and  structured in such a way that if I move a “parent bone” I would move its “child bones” too. Suppose  now that the bone of the middle section is the parent bone of 3 other bones: 1 for the head and 1 for  each arm. Tilting the middle section forward would mean tilting the head and arms forward too. Of  course the child bones are free to move without a problem.</p>	
 
 			  <p class="mb-5">This skeleton will not be rendered, it is just a way to facilitate animation, what will really be rendered  is all of the vertices changing their position depending on what bone was moved. If we want our character to make a specific animation, we could make key frames in blender and then link the two  together by making a program that modifies the position of each bone to go from the starting key  frame to the ending key frame smoothly.</p>	
 
-			  <h4 class="text-secondary mb-2">Physical Properties</h4>
+			  <p class="text-secondary mb-2"><b>Physical Properties</b></p>
 
 			  <p class="mb-5">For example, if I wanted to make a dynamic fountain, I would need to use a dynamic substance, one  that uses particles to simulate water. Simulating water being shot from the fountain would require  simulating the transfer of energy from one particle to another and then by including gravity into the  equation the particles would come back to the surface after they reach a certain height.</p>			  	 			  		
  			  
@@ -381,13 +382,50 @@
         <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
           <i class="fa fa-3x fa-times"></i>
         </a>
-        <div class="container text-center">
+        <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0 text-center">MP3 Player</h2>
+              <h2 class="text-secondary text-uppercase mb-0 text-center">–</h2>
+              <h2 class="text-secondary text-uppercase mb-0 text-center">Advanced Programming Class</h2>
               <hr class="star-dark mb-5">
+
               <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+
+
+              <p class="mb-3">I built a desktop application using Java that shows a graphic user interface (GUI) of an MP3 player. It has two main panels:</p>
+
+              <p class="text-secondary mb-2">A big one in the center, which has three tabs:</p>
+
+			  <ul class="mb-2">
+			  	<li>Artist / Group</li>
+			    <li>Style</li>			    
+			    <li>Album</li>
+			  </ul> 
+
+			  <p class="text-secondary mb-2">A smaller one to the right, it has two blocks:</p>
+
+			  <ul class="mb-5">
+			    <li>Playlist</li>			    
+			    <li>Most recently played list</li>
+			  </ul>  			  
+
+			  <h3 class="text-secondary mb-3">The center panel</h3>
+
+			  <p class="mb-5">If we select one tab in the center panel, songs are organized according to that tab. For example, if we click on the “Artist / Group” tab we will see all of the songs organized by the artist or group that created the songs. Clicking on the other tabs has a similar effect except that it organizes the songs by either style or album.</p>
+
+			  <h3 class="text-secondary mb-3">The right panel</h3>
+			  <p class="text-secondary mb-2">The panel to the right has a dynamic couple of blocks:</p>
+
+			  <ul class="mb-5">
+			    <li>The playlist block updates whenever we add a song to it. That happens if we click play on a song or group of songs (an album for example).</li>			    
+			    <li>The most recently played list updates whenever a song is played by adding the last played song on the top of that list. We also have the ability to clear these two blocks if we don’t need the information that they hold anymore.</li>
+			  </ul> 	
+
+			  <h3 class="text-secondary mb-3">One more functionality</h3>					  
+
+			  <p class="mb-5">Finally, we can save the current state of the player by clicking on menu then save, this means the next time we come back we will see our playlist block and most recently played list block the same as before we got out of the MP3 Player.</p>
+
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a>
