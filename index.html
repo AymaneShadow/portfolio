@@ -217,8 +217,9 @@
           	  <p class="lead text-center"> <a class="btn btn-x2 btn-outline-dark" href="https://github.com/AymaneShadow/3D-model-of-a-small-part-of-AUI-campus-Computer-Graphics-Class" target="_blank">
               <i class="fab fa-github"></i> Project code on Github</a>
 
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/project1/Le Boolewan.png" alt="">
+              <hr class="star-dark">
+              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
+              <p class="mb-4">Picture 1: birds’ eyes view over the rendered scene.</p>
 			  
 
 			  <h3 class="text-secondary mb-4">Introduction</h3>
@@ -231,7 +232,8 @@
 
               <p class="mb-5">This is when I found the very good YouTuber ThinMatrix, who made a Java Game Engine from scratch  and who explains very nicely how he went through every single step. He made a file called  objLoader.java that reads our .obj files and transforms them into Matrices ready to be used in our  Java Engine. After reading and understanding his code, it was clear that the basic things that we  learned in the course will no longer cut-it, and it was time to use more sophisticated tools to work on  our projects.</p>    
 
-			  <img class="img-fluid mb-5" src="img/project1/Wotah.png" alt="">
+			  <img class="img-fluid" src="img/project1/Le-Boolewan.png" alt="">
+			  <p class="mb-4">Picture 2: the project’s rendered models.</p>
 
 
 			  <h3 class="text-secondary mb-4">Used tools</h3>
@@ -251,44 +253,56 @@
 			  <p class="mb-5">Now that I’ve found an object parser, I had to start making the 3D objects needed for my project.  This is when I downloaded Blender. This software is used to make really sophisticated video games, so it was no surprise that it was hard to use, and in my case I used it to make 3D models of objects and to use UV Mapping to put texture on them.</p>
 
 			  <img class="img-fluid mb-0" src="img/project1/Untextured stuff.png" alt="">
-			  <p class="mb-4">Picture 1: Untextured Models in Blender.</p>
+			  <p class="mb-4">Picture 3: untextured Models in Blender.</p>
 
 
 			  <p class="mb-5">Learning how to do so was very time consuming. In fact, it was so time consuming that I changed the  software I use to model my objects, and this is when I downloaded Sketch-Up. Sketch-Up is very easy to use and is very intuitive, however, it does not support UV Mapping which is an essential part of the Java Game Engine that ThinMatrix made. So, I had to convert my Sketch-Up project to a blender project. Thankfully, I’ve found a person who made a plug-in just for this (pros of using an open source software). I was excited at first, but then I found out that using this method  didn’t really convert the sketch-up project 100% as it was originally. Unnecessary details were created. Extra edges and vertices were added, and half of the model didn’t render in the Java Engine.</p>
 
-			  <img class="img-fluid mb-0" src="img/project1/SUB.png" alt="">
-			  <p class="mb-5">Picture 2: Use of Sketch-Up to make a Building model that uses materials instead of UV Mapping.</p>
 
-			  <img class="img-fluid mb-0" src="img/project1/small Bad rendered B.png" alt="">
-			  <p class="mb-5">Picture 3: Problems encountered after importing a building model from Sketch-UP to Blender.</p>
-
-			  <img class="img-fluid mb-0" src="img/project1/BLB.png" alt="">
-			  <p class="mb-5">Picture 4: Problems encountered after rendering the imported model from Sketch-Up to Blender.</p>
+			  <div class="row mb-3">
+			  	<div class="col-md-6 col-lg-12">
+			  		<img class="img-fluid mb-0" src="img/project1/SUB.png" alt="">
+			  		<p class="mb-5">Picture 4: use of Sketch-Up to make a Building model that uses materials instead of UV Mapping.</p>
+			  	</div>
+			  	<div class="col-md-6 col-lg-6">
+			        <img class="img-fluid mb-0" src="img/project1/small Bad rendered B.png" alt="">
+			        <p class="mb-5">Picture 5: problems encountered after importing a building model from Sketch-UP to Blender.</p>  		
+			  	</div>				  			  	
+			  	<div class="col-md-6 col-lg-6">
+			  		<img class="img-fluid mb-0" src="img/project1/BLB.png" alt="">
+			  		<p class="mb-5">Picture 6: problems encountered after rendering the imported model from Sketch-Up to Blender.</p>		
+			  	</div>				  			  				  	
+			  </div>
 
 			  <p class="mb-5">I came to the conclusion that it would take less time to start from scratch and make a whole new  model in Blender than trying to fix the messed up imported project from Sketch-Up to Blender. And this is when I went back to using Blender only, again. I already had previous experience with Photoshop, so it was easy for me to make UV Maps, I looked for the textures I wanted on my objects, I’ve put them where Blender would expect them, I adjusted the number of the texture tiles and I cropped real world photos and implement them in the textures.</p>
 
 			  <img class="img-fluid mb-0" src="img/project1/Photoshop's UV Map.png" alt="">
-			  <p class="mb-5">Picture 5: Use of Photoshop to make UV maps.</p>			  
+			  <p class="mb-5">Picture 7: use of Photoshop to make UV maps.</p>			  
 
 			  <p class="mb-5">I am already familiar with Eclipse, so it was easy to create a project for the Java Game Engine, include  all the necessary libraries, etc.</p>
 
 			  <img class="img-fluid mb-0" src="img/project1/Eclipse.png" alt="">
-			  <p class="mb-5">Picture 6: Use of Eclipse to run the Game Engine.</p>
+			  <p class="mb-5">Picture 8: use of Eclipse to run the Game Engine.</p>
 
 			  <p class="mb-5">Building a single building was a big hassle, it is what took most of my time on this project, but after  every failed attempt I reinforced my knowledge about Blender and the end results turned-out to be  pretty decent.</p>			  			  			  
 			  <h3 class="text-secondary mb-4">How close did I come to achieving my graphical goals?</h3>
 
 			  <p class="mb-5">Very close. I made a textured 3D model of the cafeteria building, a textured 3D model of the fountain next to it that contains shiny, reflective and rippling water, I used a textured terrain and moving clouds that use the skybox method (3D projection of textures to a cube that rotates). What I didn’t make is animating my character, or implement physical properties.</p>
 
-
-			  <img class="img-fluid mb-0" src="img/project1/real textures.png" alt="">
-			  <p class="mb-5">Picture 7: Real photos incorporated into the textures of the building.</p>
-
-			  <img class="img-fluid mb-0" src="img/project1/corresponding UV Map.png" alt="">
-			  <p class="mb-5">Picture 8: The building’s corresponding UV Map.</p>
-
-			  <img class="img-fluid mb-0" src="img/project1/wotahz.png" alt="">
-			  <p class="mb-5">Picture 9: Realistic water rendering contained in the fountain model.</p>			  			  
+			  <div class="row mb-3">
+			  	<div class="col-md-6 col-lg-6">
+			        <img class="img-fluid mb-0" src="img/project1/real textures.png" alt="">
+			        <p class="mb-5">Picture 9: real photos incorporated into the textures of the building.</p> 		
+			  	</div>				  			  	
+			  	<div class="col-md-6 col-lg-6">
+			  		<img class="img-fluid mb-0" src="img/project1/corresponding UV Map.png" alt="">
+			  		<p class="mb-5">Picture 10: the building’s corresponding UV Map.</p>	
+			  	</div>				
+			  	<div class="col-md-6 col-lg-12">
+			  		<img class="img-fluid mb-0" src="img/project1/wotahz.png" alt="">
+			  		<p class="mb-5">Picture 11: realistic water rendering contained in the fountain model.</p>
+			  	</div>			  	  			  				  	
+			  </div>	  			  
 
 			  <h3 class="text-secondary mb-4">How would I implement the things I didn’t?</h3>
 
@@ -302,8 +316,8 @@
 
 			  <p class="mb-5">For example, if I wanted to make a dynamic fountain, I would need to use a dynamic substance, one  that uses particles to simulate water. Simulating water being shot from the fountain would require  simulating the transfer of energy from one particle to another and then by including gravity into the  equation the particles would come back to the surface after they reach a certain height.</p>			  	 			  		
  			  
- 			  <img class="img-fluid mb-0" src="img/project1/Birds Eyes View 1.png" alt="">
- 			  <p class="mb-5">Picture 10: Birds’ eyes view over the rendered scene.</p>
+ 			  <img class="img-fluid mb-0" src="img/project1/Birds Eyes View 2.png" alt="">
+ 			  <p class="mb-5">Picture 12: Birds’ eyes view 2 over the rendered scene.</p>
 
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -332,40 +346,93 @@
 
               <hr class="star-dark mb-5">
 
-              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
+              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+              <p class="mb-4">Picture 1: The main (center) panel of the MP3 player.</p>		  		
+
+			  <h3 class="text-secondary mb-3">Introduction</h3>
 
               <p class="mb-3">I built a desktop application using Java that shows a graphic user interface (GUI) of an MP3 player. It has two main panels:</p>
 
               <p class="text-secondary mb-2">A big one in the center, which has three tabs:</p>
 
-			  <ul class="mb-2">
+			  <ul class="mb-4">
 			  	<li>Artist / Group</li>
 			    <li>Style</li>			    
-			    <li>Album</li>
-			  </ul> 
+			    <li>Albums</li>
+			  </ul> 			  
 
-			  <p class="text-secondary mb-2">A smaller one to the right, it has two blocks:</p>
+			  <p class="text-secondary mb-2">A smaller one to the right, which has two blocks:</p>
 
-			  <ul class="mb-5">
+			  <ul class="mb-4">
 			    <li>Playlist</li>			    
 			    <li>Most recently played list</li>
-			  </ul>  			  
+			  </ul>  			  			  		  
 
 			  <h3 class="text-secondary mb-3">The center panel</h3>
 
-			  <p class="mb-5">If we select one tab in the center panel, songs are organized according to that tab. For example, if we click on the “Artist / Group” tab we will see all of the songs organized by the artist or group that created the songs. Clicking on the other tabs has a similar effect except that it organizes the songs by either style or album.</p>
+			  <p class="mb-4">If we select one tab in the center panel, songs are organized according to that tab. For example, if we click on the “Artist / Group” tab we will see all of the songs organized by the artist or group that created the songs. Clicking on the other tabs has a similar effect except that it organizes the songs by either style or album.</p>
+
+			  <div class="row mb-4">
+          		<div class="col-md-6 col-lg-4">
+                	<img class="img-fluid mb-2" src="img/project2/Artist-Group.png" alt="">
+                	<p class="mb-2">Picture 2: The Artist/Group Tab.</p>
+            	</div>			  				  	
+          		<div class="col-md-6 col-lg-4">
+                	<img class="img-fluid mb-2" src="img/project2/Style.png" alt="">
+                	<p class="mb-2">Picture 3: The Style Tab.</p>
+            	</div>
+          		<div class="col-md-6 col-lg-4">
+                	<img class="img-fluid mb-2" src="img/project2/Album.png" alt="">
+                	<p class="mb-2">Picture 4: The Album Tab.</p>
+            	</div>
+        	  </div>			  
 
 			  <h3 class="text-secondary mb-3">The right panel</h3>
 			  <p class="text-secondary mb-2">The panel to the right has a dynamic couple of blocks:</p>
 
-			  <ul class="mb-5">
+			  <ul class="mb-4">
 			    <li>The playlist block updates whenever we add a song to it. That happens if we click play on a song or group of songs (an album for example).</li>			    
 			    <li>The most recently played list updates whenever a song is played by adding the last played song on the top of that list. We also have the ability to clear these two blocks if we don’t need the information that they hold anymore.</li>
 			  </ul> 	
 
+			  <div class="row mb-5">
+          		<div class="col-md-6 col-lg-6">
+                	<img class="img-fluid" src="img/project2/PlayList.png" alt="">
+                	<p class="mb-2">Picture 5: The playlist block is filled with songs that the user wants to play.</p>
+            	</div>
+          		<div class="col-md-6 col-lg-6">
+                	<img class="img-fluid" src="img/project2/mostRecentlyPlayedList.png" alt="">
+                	<p class="mb-2">Picture 6: The most recently played list block is only filled with songs that have been played.</p>
+            	</div>
+        	  </div>				  
+
 			  <h3 class="text-secondary mb-3">One more functionality</h3>					  
 
-			  <p class="mb-5">Finally, we can save the current state of the player by clicking on menu then save, this means the next time we come back we will see our playlist block and most recently played list block the same as before we got out of the MP3 Player.</p>
+			  <p class="mb-3">Finally, we can save the current state of the player by clicking on menu then save, this means the next time we come back we will see our playlist block and most recently played list block the same as before we got out of the MP3 Player.</p>
+			  
+			  <div class="row mb-5">
+			  	<div class="col-md-6 col-lg-6">
+			  		<img class="img-fluid" src="img/project2/Save.png" alt="">
+			  		<p class="mb-2">Picture 7: Using the save button before exiting.</p>
+			  	</div>
+			  	<div class="col-md-6 col-lg-6">
+			  		<img class="img-fluid mb-1" src="img/project2/serializable.png" alt="">
+			  		<p class="mb-5">Picture 8: Example of a class that implements Serializable.</p>
+			  		<img class="img-fluid" src="img/project2/savedFiles.png" alt="">
+			  		<p class="mb-2">Picture 9: The two files that are stored on the hard drive after clicking save.</p>		  		
+			  	</div>				  			  	
+			  </div>
+
+			  <div class="row mb-5">
+			  	<div class="col-md-6 col-lg-12 mb-4">
+			  		<img class="img-fluid" src="img/project2/mp3PlayerCodeNetbeans.png" alt="">
+			  		<p class="mb-2">Picture 10: MP3 Player Project in Netbeans.</p>
+			  	</div>				  	
+			  	<div class="col-md-6 col-lg-12">
+			  		<img class="img-fluid" src="img/project2/mp3Player.png" alt="">
+			  		<p class="mb-2">Picture 11: An overall look on the MP3 Player.</p>
+			  	</div>		  		  			  	
+			  </div>			  			  			  
 
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -394,7 +461,9 @@
               <i class="fab fa-github"></i> Project code on Github</a>
 
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
+              <img class="img-fluid mb-3" src="img/portfolio/circus.png" alt="">
+
+              <h3 class="text-secondary mb-4">Introduction</h3>
 
               <p class="mb-3">I worked on building a website for “Centre Ahli”, a center that welcomes boys in precarious situations whose ages vary between 7 and 15 years, and I used the following to do so:</p>
 
