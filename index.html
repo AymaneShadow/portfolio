@@ -215,113 +215,33 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0 text-center">3D Simulation of AUI Campus</h2>
-              <h2 class="text-secondary text-uppercase mb-0 text-center">-</h2>
-              <h2 class="text-secondary text-uppercase mb-3 text-center">Computer Graphics Class</h2>
-
-          	  <p class="lead text-center"> <a class="btn btn-x2 btn-outline-dark" href="https://github.com/AymaneShadow/3D-model-of-a-small-part-of-AUI-campus-Computer-Graphics-Class" target="_blank">
-              <i class="fab fa-github"></i> Project code on Github</a>
-
               <hr class="star-dark">
-              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-              <p class="mb-4">Picture 1: birds’ eyes view over the rendered scene.</p>
+              
+              
+              <div class="row mb-4">
+                <div class="col-md-6 col-lg-6">
+
+                  <img class="img-fluid" src="img/portfolio/cabin.png" alt="">                  
+
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+
+                  <img class="img-fluid mb-3" src="img/project1/Wotah.png" alt="">
+
+                  <img class="img-fluid" src="img/project1/Le-Boolewan.png" alt="">                   
+
+                </div>
+              </div>              
 			  
 
-			  <h3 class="text-secondary mb-4">Introduction</h3>
+			  <h3 class="text-secondary mb-2">Introduction</h3>
 
-              <p class="mb-5">Simulating real world places is always really interesting because it allows experiencing their sight  from anywhere in the planet, and if done right it can help solve some interesting optimization  problems that otherwise would take a much longer time. My project is about implementing a 3D  model of a small part of AUI campus.</p>
+              <p class="mb-5">After learning how to manually create a cube and a pyramid during the first part of the course, it became obvious that making any kind of more complex shapes would be extremely...</p>
 
-              <p class="mb-5">After learning how to manually create a cube and a pyramid during the first part of the course, it  became obvious that making any kind of more complex shapes would be extremely hard, the  challenge would be more on finding out where each point of an objects geometry is rather than  learning new and more complex computer graphics generation techniques.</p>
-
-              <p class="mb-5">So, the first question that came into my mind: is there any way to make 3D models using a wellknown  software, and then rendering them using Java code? The question was first answered by Dr. Kevin Smith, who told me to look up .obj files. After some  research I discovered that it is indeed possible, and that there are multiple files types (including .obj)  dedicated to storing objects information. However, due to their simplicity .obj files are preferred for  people that just started to learn openGL.</p>  
-
-              <p class="mb-5">This is when I found the very good YouTuber ThinMatrix, who made a Java Game Engine from scratch  and who explains very nicely how he went through every single step. He made a file called  objLoader.java that reads our .obj files and transforms them into Matrices ready to be used in our  Java Engine. After reading and understanding his code, it was clear that the basic things that we  learned in the course will no longer cut-it, and it was time to use more sophisticated tools to work on  our projects.</p>    
-
-			  <img class="img-fluid" src="img/project1/Le-Boolewan.png" alt="">
-			  <p class="mb-4">Picture 2: the project’s rendered models.</p>
-
-
-			  <h3 class="text-secondary mb-4">Used tools</h3>
-
-			  <ul>
-			  	<li>Eclipse to run the Java Engine that is used to render the modeled objects, as well as the  terrain, lights, water, the sky, etc.</li>
-			    <li>Photoshop to make UV Maps (used for projecting a 2D image to a 3D model's surface for texture mapping)</li>
-			    
-			    <li>Sketch-UP and Blender for 3D modelling.</li>
-			  </ul>  
-
-			  <p class="mb-3">It is important to note that the Java Engine is made by ThinMatrix, a YouTuber that makes a tutorial  series on how to create a 3D Java game with OpenGL using the library LWJGL (Light Weight Java  Game Library).</p>
-			  <p class="mb-5">Link to his YouTube channel: <a href="https://www.youtube.com/user/ThinMatrix">https://www.youtube.com/user/ThinMatrix</p></a>
-
-			  <h3 class="text-secondary mb-4">In-depth Explanation of the tools usage</h3>
-
-			  <p class="mb-5">Now that I’ve found an object parser, I had to start making the 3D objects needed for my project.  This is when I downloaded Blender. This software is used to make really sophisticated video games, so it was no surprise that it was hard to use, and in my case I used it to make 3D models of objects and to use UV Mapping to put texture on them.</p>
-
-			  <img class="img-fluid mb-0" src="img/project1/Untextured stuff.png" alt="">
-			  <p class="mb-4">Picture 3: untextured Models in Blender.</p>
-
-
-			  <p class="mb-5">Learning how to do so was very time consuming. In fact, it was so time consuming that I changed the  software I use to model my objects, and this is when I downloaded Sketch-Up. Sketch-Up is very easy to use and is very intuitive, however, it does not support UV Mapping which is an essential part of the Java Game Engine that ThinMatrix made. So, I had to convert my Sketch-Up project to a blender project. Thankfully, I’ve found a person who made a plug-in just for this (pros of using an open source software). I was excited at first, but then I found out that using this method  didn’t really convert the sketch-up project 100% as it was originally. Unnecessary details were created. Extra edges and vertices were added, and half of the model didn’t render in the Java Engine.</p>
-
-
-			  <div class="row mb-3">
-			  	<div class="col-md-6 col-lg-12">
-			  		<img class="img-fluid mb-0" src="img/project1/SUB.png" alt="">
-			  		<p class="mb-5">Picture 4: use of Sketch-Up to make a Building model that uses materials instead of UV Mapping.</p>
-			  	</div>
-			  	<div class="col-md-6 col-lg-6">
-			        <img class="img-fluid mb-0" src="img/project1/small Bad rendered B.png" alt="">
-			        <p class="mb-5">Picture 5: problems encountered after importing a building model from Sketch-UP to Blender.</p>  		
-			  	</div>				  			  	
-			  	<div class="col-md-6 col-lg-6">
-			  		<img class="img-fluid mb-0" src="img/project1/BLB.png" alt="">
-			  		<p class="mb-5">Picture 6: problems encountered after rendering the imported model from Sketch-Up to Blender.</p>		
-			  	</div>				  			  				  	
-			  </div>
-
-			  <p class="mb-5">I came to the conclusion that it would take less time to start from scratch and make a whole new  model in Blender than trying to fix the messed up imported project from Sketch-Up to Blender. And this is when I went back to using Blender only, again. I already had previous experience with Photoshop, so it was easy for me to make UV Maps, I looked for the textures I wanted on my objects, I’ve put them where Blender would expect them, I adjusted the number of the texture tiles and I cropped real world photos and implement them in the textures.</p>
-
-			  <img class="img-fluid mb-0" src="img/project1/Photoshop's UV Map.png" alt="">
-			  <p class="mb-5">Picture 7: use of Photoshop to make UV maps.</p>			  
-
-			  <p class="mb-5">I am already familiar with Eclipse, so it was easy to create a project for the Java Game Engine, include  all the necessary libraries, etc.</p>
-
-			  <img class="img-fluid mb-0" src="img/project1/Eclipse.png" alt="">
-			  <p class="mb-5">Picture 8: use of Eclipse to run the Game Engine.</p>
-
-			  <p class="mb-5">Building a single building was a big hassle, it is what took most of my time on this project, but after  every failed attempt I reinforced my knowledge about Blender and the end results turned-out to be  pretty decent.</p>			  			  			  
-			  <h3 class="text-secondary mb-4">How close did I come to achieving my graphical goals?</h3>
-
-			  <p class="mb-5">Very close. I made a textured 3D model of the cafeteria building, a textured 3D model of the fountain next to it that contains shiny, reflective and rippling water, I used a textured terrain and moving clouds that use the skybox method (3D projection of textures to a cube that rotates). What I didn’t make is animating my character, or implement physical properties.</p>
-
-			  <div class="row mb-3">
-			  	<div class="col-md-6 col-lg-6">
-			        <img class="img-fluid mb-0" src="img/project1/real textures.png" alt="">
-			        <p class="mb-5">Picture 9: real photos incorporated into the textures of the building.</p> 		
-			  	</div>				  			  	
-			  	<div class="col-md-6 col-lg-6">
-			  		<img class="img-fluid mb-0" src="img/project1/corresponding UV Map.png" alt="">
-			  		<p class="mb-5">Picture 10: the building’s corresponding UV Map.</p>	
-			  	</div>				
-			  	<div class="col-md-6 col-lg-12">
-			  		<img class="img-fluid mb-0" src="img/project1/wotahz.png" alt="">
-			  		<p class="mb-5">Picture 11: realistic water rendering contained in the fountain model.</p>
-			  	</div>			  	  			  				  	
-			  </div>	  			  
-
-			  <h3 class="text-secondary mb-4">How would I implement the things I didn’t?</h3>
-
-			  <p class="text-secondary mb-2"><b>Animations</b></p>
-
-			  <p class="mb-5">Using blender I would create a “skeleton” inside my character’s “body”, it’ll be very simple and  structured in such a way that if I move a “parent bone” I would move its “child bones” too. Suppose  now that the bone of the middle section is the parent bone of 3 other bones: 1 for the head and 1 for  each arm. Tilting the middle section forward would mean tilting the head and arms forward too. Of  course the child bones are free to move without a problem.</p>	
-
-			  <p class="mb-5">This skeleton will not be rendered, it is just a way to facilitate animation, what will really be rendered  is all of the vertices changing their position depending on what bone was moved. If we want our character to make a specific animation, we could make key frames in blender and then link the two  together by making a program that modifies the position of each bone to go from the starting key  frame to the ending key frame smoothly.</p>	
-
-			  <p class="text-secondary mb-2"><b>Physical Properties</b></p>
-
-			  <p class="mb-5">For example, if I wanted to make a dynamic fountain, I would need to use a dynamic substance, one  that uses particles to simulate water. Simulating water being shot from the fountain would require  simulating the transfer of energy from one particle to another and then by including gravity into the  equation the particles would come back to the surface after they reach a certain height.</p>			  	 			  		
- 			  
- 			  <img class="img-fluid mb-0" src="img/project1/Birds Eyes View 2.png" alt="">
- 			  <p class="mb-5">Picture 12: Birds’ eyes view 2 over the rendered scene.</p>
+              <a class="btn btn-secondary btn-lg rounded-pill" href="3D-Simulation-of-AUI-Campus-Computer-Graphics-Class.html" target="_blank">
+                <i class="fa fa-close"></i>
+                Read the details >></a>
 
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -343,262 +263,38 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0 text-center">Website for</h2>
               <h2 class="text-secondary text-uppercase mb-0 text-center">“Centre Ahli”</h2>
-              <h2 class="text-secondary text-uppercase mb-0 text-center">–</h2>
-              <h2 class="text-secondary text-uppercase mb-4 text-center">Volunteer Work</h2>
 
-          	  <p class="lead text-center"> <a class="btn btn-x2 btn-outline-dark" href="https://github.com/AymaneShadow/Website-for-Centre-Ahli-Volunteer-Work" target="_blank">
-              <i class="fab fa-github"></i> Project code on Github</a>
+              <hr class="star-dark mb-5">              
 
-              <hr class="star-dark mb-5">
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-              <p class="mb-5 font-weight-bold">Picture 1: website logos.</p>
+              <div class="row mb-4">
+                <div class="col-md-8 col-lg-8">
 
-              <h3 class="text-secondary mb-4">Introduction</h3>
+                  <img class="img-fluid mb-3" src="img/portfolio/circus.png" alt="">
 
-              <p class="mb-4">I worked on building a website for “Centre Ahli”, a center that welcomes boys in precarious situations whose ages vary between 7 and 15 years.</p>
+                  <img class="img-fluid" src="img/project3/actions.png" alt="">
 
+                </div>
 
-			  <p class="mb-2">To store information, I used a database and handled it using Microsoft SQL Server Management Studio. To program I used Visual Studio which allows using all of the technologies needed in one program.</p>
+                <div class="col-md-4 col-lg-4">
 
-			  <p class="mb-5">The website is still under construction and is not available for the public right now.</p>	      
+                  <img class="img-fluid mb-4" src="img/project3/profileDetails.png" alt="">   
 
+                  <img class="img-fluid" src="img/project3/chooseChild.png" alt="">               
 
-			  <h3 class="text-secondary mb-3">Goals</h3>
+                </div>
+              </div>                
 
-			  <ul class="mb-2">
-			  	<li class="mb-2">To present the center to the public in a positive way.</li>
-			    <li class="mb-2">To be international by using English, Arabic and French as the supported languages since a lot of the volunteers that come to the center to help are non-Moroccans.</li>			    
-			    <li class="mb-5"><p class="mb-2">To automate some tasks that are performed daily by the educators, such as:</p>
-				    <ul>
-				      <li>Organizing activities with the children.</li>
-				      <li>Adding children to those activities.</li>
-				      <li>Subscribing volunteers to those activities.</li>
-				    </ul>
-			    </li>
-			  </ul> 	
+              <h3 class="text-secondary mb-3">Introduction</h3>
 
-			<h3 class="text-secondary mb-3">Technology used</h3>
+              <p>I worked on building a website for “Centre Ahli”, a center that welcomes boys in precarious situations whose ages vary between 7 and 15 years.</p>
 
-			<div class="row mb-1">
 
-			  <div class="col-md-4 col-lg-4">
+			        <p class="mb-4">To store information, I used...</p>
 
-				  <p class="text-secondary mb-2">Client side:</p>
 
-				  <ul class="mb-2">
-				  	<li>HTML</li>
-				    <li>CSS</li>			    
-				    <li>JavaScript</li>
-				  </ul> 			  	
-
-			  </div>
-
-			  <div class="col-md-4 col-lg-4">
-
-				  <p class="text-secondary mb-2">Server side:</p>
-
-				  <ul class="mb-2">
-				  	<li>C#</li>
-				    <li>ASP.NET</li>			    
-				    <li>Microsoft SQL Server</li>
-				  </ul>
-
-			  </div>
-
-			  <div class="col-md-4 col-lg-4">
-
-				  <p class="text-secondary mb-2">Software:</p>
-
-				  <ul class="mb-4">
-				  	<li>Visual Studio</li>
-				    <li>Microsoft SQL Server Management Studio</li>			    
-				    <li>FileZilla</li>
-				  </ul>
-
-			  </div>             
-				
-			</div>	  	  		
-		  
-			  <h3 class="text-secondary mb-3">Front Page</h3>
-			  
-			  <p class="mb-3">
-			  The first things visitors see are some menus, a brief description of the center, 
-			  a link to a more descriptive page if they wish to learn more about the center 
-			  and some logos / graphics. 
-			  </p>
-
-			  <p class="mb-3">
-			  The language menu allows switching the website between different languages: English, French or Arabic.
-			  </p>
-
-			  <p class="mb-3">
-			  The search / social media menu allows looking for information in the website or to get to the center's
-			  social media pages fast.
-			  </p>
-
-			  <p class="mb-3">
-			  The main menu allows navigating to important pages in the website.
-			  </p>
-
-			  <p class="mb-3">
-			  The blue mosque represents the
-			  actual mosque that is right next to the center and the little house represents
-			  the center itself, along side a shiny little sun and birds flying around to represent
-			  the peaceful environment that the center provides.
-			  </p>
-
-			  <p class="mb-3">
-			  	Next-up is a presentation video made by one of the volunteers.
-			  </p>
-
-			  <p class="mb-3">
-			  	After that a list of the latest activities is shown. A visitor can sort the activities by category.
-			  	Clicking on an activity takes the visitor to the activity details page.
-			  </p>
-
-
-			  <p class="mb-3">
-			  	Finally, the footer displays some quotes by educators, the center's contact information
-			  	and a contact form.
-			  </p>
-
-			  
-			  <img class="img-fluid" src="img/project3/Cropped-SS1.jpg" alt="">
-			  <p class="mb-4 font-weight-bold">Picture 2: the front page.</p>
-
-
-
-			  <h3 class="text-secondary mb-3">Log-in</h3>  
-
-			  <img class="img-fluid" src="img/project3/login.png" alt="">
-			  <p class="mb-4 font-weight-bold">Picture 3: the log-in form.</p>
-
-			  <p class="mb-3">
-			  In order to perform actions in the website such as making a comment, adding
-			  an activity as a volunteer, etc, one must create an account and log-in.
-			  </p>
-
-
-			  <h3 class="text-secondary mb-3">After loging-in</h3>
-
-				<h6 class="text-secondary mb-3">Profile</h1>
-
-				<div class="row mb-1">
-				  <div class="col-md-6 col-lg-6">
-
-					  <img class="img-fluid" src="img/project3/profileDetails.png" alt="">
-					  <p class="font-weight-bold">Picture 4: profile details.</p>
-
-				  </div>
-
-				  <div class="col-md-6 col-lg-6">
-
-					  <img class="img-fluid" src="img/project3/profileDetails2.png" alt="">
-					  <p class="font-weight-bold">Picture 5: more profile details.</p>	  	
-
-				  </div>
-				</div>
-
-				<p>
-					The profile page provides useful information about a user:
-					  				  				  				  				
-					<ul class="mb-5">
-						<li>Profile Picture</li>
-						<li>Details such as a biography</li>
-						<li>Notifications</li>
-						<li>Upcoming Activities</li>			    
-						<li>Created Activities</li>
-						<li>Attended Activities</li>
-					</ul>				  
-
-				</p>
-
-
-			  <h6 class="text-secondary mb-2">Actions</h1>
-
-			  <img class="img-fluid" src="img/project3/actions.png" alt="">
-			  <p class="mb-4 font-weight-bold">Picture 6: the actions field and the user's name are added to the menu.</p>
-
-			  <p class="mb-5">
-			  Depending on the type of account that has loged-in, the user will see a slightly different interface.
-			  The picture above shows the actions available for the educators. If the account is of type volunteer
-			  then only "Create Activity" will be available.
-			  </p>
-			  
-
-
-			  <p class="font-weight-bold mb-2">Add Child</p>
-			  <p class="mb-4">
-				If an educator clicks on the "Add Child" action menu they'll
-				have access to a form that allows adding a child's information to the database.
-			  </p>			  	
-
-			  <img class="img-fluid" src="img/project3/addChild.png" alt="">
-			  <p class="font-weight-bold mb-4">Picture 7: the form that allows adding a child to our database.</p>
-
-
-			  <p class="font-weight-bold mb-2">Add Related Person to a Child</p>
-			  <p class="mb-4">
-				To add a relative such as a parent or sibling the educator can click on the "Add
-				A Related Person To A Child" button. After that they'll need to pick a child, then
-				fill in the form.
-			  </p>			  	
-
-			  <img class="img-fluid" src="img/project3/chooseChild.png" alt="">
-			  <p class="font-weight-bold">Picture 8: the form that allows looking for a specific child.</p>
-
-			  <img class="img-fluid" src="img/project3/addRelatedPerson.png" alt="">
-			  <p class="font-weight-bold mb-4">Picture 9: the form that allows looking for a specific child.</p>
-	  			
-
-			
-			  <p class="font-weight-bold mb-2">Create Activity</p>
-
-			  <p class="mb-3">
-				Both educators and volunteers can create an activity. After clicking on the "Create Activity"
-				button in the action menu, users are invited to fill-in the activity details and add to it
-				the children that will participate.
-			  </p>		  				  
-
-	  		  <img class="img-fluid" src="img/project3/createActivity.png" alt="">
-			  <p class="font-weight-bold mb-4">Picture 10: the form that allows creating an activity.</p>
-
-
-
-			  <h3 class="text-secondary mb-3">Activities</h3>
-
-			  <h6 class="text-secondary mb-3">Activity page</h6>
-
-			  <p class="mb-1">
-				An activity page is where all of its information is displayed:
-
-					<ul class="mb-2">
-
-						<li>Description</li>
-						<li>Location</li>
-						<li>Date</li>
-						<li>Participating Volunteers</li>
-						<li>Volunteers Attendance</li>
-						<li>Participating Children</li>
-						<li>Children Attendance</li>    
-						<li>Comments</li>
-
-					</ul>
-			  </p>
-
-			  <p class="mb-3">
-				A page is also interactive in the sense that volunteers can add it to their upcoming 
-				activities, comment on it and have conversations with other volunteers in the comment
-				section, and can be modified or deleted by the activity creator.
-			  </p>
-
-
-			  <img class="img-fluid" src="img/project3/activity.png" alt="">
-			  <p class="font-weight-bold mb-4">Picture 11: an activity page.</p>
-
-			  <img class="img-fluid" src="img/project3/deleteActivity.png" alt="">
-			  <p class="font-weight-bold mb-5">Picture 12: delete activity button (if the user is the owner).</p>			  
-
+              <a class="btn btn-secondary btn-lg rounded-pill" href="Website-for-Centre-Ahli-Volunteer-Work.html" target="_blank">
+                <i class="fa fa-close"></i>
+                Read the details >></a>
 
 
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
@@ -621,101 +317,36 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0 text-center">MP3 Player</h2>
-              <h2 class="text-secondary text-uppercase mb-0 text-center">–</h2>
-              <h2 class="text-secondary text-uppercase mb-4 text-center">Advanced Programming Class</h2>
-
-          	  <p class="lead text-center"> <a class="btn btn-x2 btn-outline-dark" href="https://github.com/AymaneShadow/MP3-Player-Advanced-Programming-Class" target="_blank">
-              <i class="fab fa-github"></i> Project code on Github</a>
 
               <hr class="star-dark mb-5">
 
-              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-              <p class="mb-4">Picture 1: The main (center) panel of the MP3 player.</p>		  		
+              
+
+              <div class="row mb-4">
+                <div class="col-md-8 col-lg-8">                  
+
+                  <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+
+                  <img class="img-fluid mb-3" src="img/project2/Style.png" alt="">
+
+                  <img class="img-fluid" src="img/project2/Save.png" alt="">
+
+                </div>
+              </div>                   
 
 			  <h3 class="text-secondary mb-3">Introduction</h3>
 
               <p class="mb-3">I built a desktop application using Java that shows a graphic user interface (GUI) of an MP3 player. It has two main panels:</p>
 
-              <p class="text-secondary mb-2">A big one in the center, which has three tabs:</p>
+              <p class="text-secondary mb-4">A big one in the center, which has...</p>
 
-			  <ul class="mb-4">
-			  	<li>Artist / Group</li>
-			    <li>Style</li>			    
-			    <li>Albums</li>
-			  </ul> 			  
-
-			  <p class="text-secondary mb-2">A smaller one to the right, which has two blocks:</p>
-
-			  <ul class="mb-4">
-			    <li>Playlist</li>			    
-			    <li>Most recently played list</li>
-			  </ul>  			  			  		  
-
-			  <h3 class="text-secondary mb-3">The center panel</h3>
-
-			  <p class="mb-4">If we select one tab in the center panel, songs are organized according to that tab. For example, if we click on the “Artist / Group” tab we will see all of the songs organized by the artist or group that created the songs. Clicking on the other tabs has a similar effect except that it organizes the songs by either style or album.</p>
-
-			  <div class="row mb-4">
-          		<div class="col-md-6 col-lg-4">
-                	<img class="img-fluid mb-2" src="img/project2/Artist-Group.png" alt="">
-                	<p class="mb-2">Picture 2: The Artist/Group Tab.</p>
-            	</div>			  				  	
-          		<div class="col-md-6 col-lg-4">
-                	<img class="img-fluid mb-2" src="img/project2/Style.png" alt="">
-                	<p class="mb-2">Picture 3: The Style Tab.</p>
-            	</div>
-          		<div class="col-md-6 col-lg-4">
-                	<img class="img-fluid mb-2" src="img/project2/Album.png" alt="">
-                	<p class="mb-2">Picture 4: The Album Tab.</p>
-            	</div>
-        	  </div>			  
-
-			  <h3 class="text-secondary mb-3">The right panel</h3>
-			  <p class="text-secondary mb-2">The panel to the right has a dynamic couple of blocks:</p>
-
-			  <ul class="mb-4">
-			    <li>The playlist block updates whenever we add a song to it. That happens if we click play on a song or group of songs (an album for example).</li>			    
-			    <li>The most recently played list updates whenever a song is played by adding the last played song on the top of that list. We also have the ability to clear these two blocks if we don’t need the information that they hold anymore.</li>
-			  </ul> 	
-
-			  <div class="row mb-5">
-          		<div class="col-md-6 col-lg-6">
-                	<img class="img-fluid" src="img/project2/PlayList.png" alt="">
-                	<p class="mb-2">Picture 5: The playlist block is filled with songs that the user wants to play.</p>
-            	</div>
-          		<div class="col-md-6 col-lg-6">
-                	<img class="img-fluid" src="img/project2/mostRecentlyPlayedList.png" alt="">
-                	<p class="mb-2">Picture 6: The most recently played list block is only filled with songs that have been played.</p>
-            	</div>
-        	  </div>				  
-
-			  <h3 class="text-secondary mb-3">One more functionality</h3>					  
-
-			  <p class="mb-3">Finally, we can save the current state of the player by clicking on menu then save, this means the next time we come back we will see our playlist block and most recently played list block the same as before we got out of the MP3 Player.</p>
-			  
-			  <div class="row mb-5">
-			  	<div class="col-md-6 col-lg-6">
-			  		<img class="img-fluid" src="img/project2/Save.png" alt="">
-			  		<p class="mb-2">Picture 7: Using the save button before exiting.</p>
-			  	</div>
-			  	<div class="col-md-6 col-lg-6">
-			  		<img class="img-fluid mb-1" src="img/project2/serializable.png" alt="">
-			  		<p class="mb-5">Picture 8: Example of a class that implements Serializable.</p>
-			  		<img class="img-fluid" src="img/project2/savedFiles.png" alt="">
-			  		<p class="mb-2">Picture 9: The two files that are stored on the hard drive after clicking save.</p>		  		
-			  	</div>				  			  	
-			  </div>
-
-			  <div class="row mb-5">
-			  	<div class="col-md-6 col-lg-12 mb-4">
-			  		<img class="img-fluid" src="img/project2/mp3PlayerCodeNetbeans.png" alt="">
-			  		<p class="mb-2">Picture 10: MP3 Player Project in Netbeans.</p>
-			  	</div>				  	
-			  	<div class="col-md-6 col-lg-12">
-			  		<img class="img-fluid" src="img/project2/mp3Player.png" alt="">
-			  		<p class="mb-2">Picture 11: An overall look on the MP3 Player.</p>
-			  	</div>		  		  			  	
-			  </div>			  			  			  
+              <a class="btn btn-secondary btn-lg rounded-pill" href="MP3-Player-Advanced-Programming-Class.html" target="_blank">
+                <i class="fa fa-close"></i>
+                Read the details >></a>	  			  			  
 
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
