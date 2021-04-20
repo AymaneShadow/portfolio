@@ -68,7 +68,8 @@
         <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
         <h1 class="text-uppercase mb-0">Aymane Chaoui</h1>
         <hr class="star-light">
-        <h2 class="font-weight-light mb-0">Grad. Student: Master of Science in Informatics: Games Engineering</h2>
+	<h2 class="font-weight-light mb-0">Graduate Student</h2>
+        <h2 class="font-weight-light mb-0">Master of Science in Informatics: Games Engineering</h2>
         <h2 class="font-weight-light mb-0">Technical University of Munich</h2>	 
         <hr class="star-light">
         <h2 class="font-weight-light mb-0">Bachelor of Science in Computer Science</h2>
@@ -204,7 +205,7 @@
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; Aymane Chaoui's Portfolio 2021</small>
+        <small>Copyright &copy; Aymane Chaoui's Portfolio <span id="year"></span></small>
       </div>
     </div>
 
@@ -363,6 +364,10 @@
 
       </div>
     </div>    
+	  
+    <script>
+	document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>	  
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
